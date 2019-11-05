@@ -8,7 +8,7 @@ public class ListService {
     abstract class Item1{ 
       private int Item1 = 0;
       int Itemid;
-      int price;
+      private int price;
 
       private String Str1;
       String Name;
@@ -17,21 +17,18 @@ public class ListService {
       Item1(int Itemid, String Name, int price){  // コンストラクタ1
         this.Itemid = 01;
         this.Name = Str1;
-        this.price = 1000;
-      }
-      
-    }      
-    public static void setItemlist() {
-        
-        Itemid I1 = new Itemid("itemid",01);
-
-  }
-        
-      
+        this.setPrice(1000);
       }
 
-      private void setItemid() {
-        // TODO 自動生成されたメソッド・スタブ
+
+      public int getPrice() {
+        return price;
+      }
+
+
+      public void setPrice(int price) {
+        this.price = price;
+      }
         
       }
     
